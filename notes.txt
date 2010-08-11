@@ -1,0 +1,37 @@
+WCF RIA Services Presentation
+
+Overview
+	- What is RIA Services
+	- Sample application
+
+What is RIA Services
+	- "WCF RIA Services is a framework focused on the communication between the server and client, specifically between a web application on a server and a silverlight application on a client."
+	- "It auto generates the plumbing code for communicating between the server and client and allows you to focus on only coding the business logic."
+	- "It also provides support for authentication and data validation."
+	- "RIA Services is conventions based, which allows for automatic configuration that is based upon the method names."
+
+Transition
+	- "I will be creating a small app that shows the basic functionality of the WCF RIA Services."
+
+Application Overview
+	- Create RIA Service without the VS wizard
+	- Make the RIA Service unit testable
+
+Prerequisites (http://www.silverlight.net/getstarted/riaservices/)
+	- Silverlight 4 Tools
+	- WCF RIA Services 1.0
+
+Creating the Application
+	- New "Business Application" Project
+	- Quick example using the wizard
+	- Basic Setup
+		- DomainService class
+		- UI
+		- Communication
+	- Advanced Setup
+		- Update
+		- Add
+		- MaxReturn
+	- DomainService Factory
+
+Conclusion
