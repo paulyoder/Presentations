@@ -23,9 +23,12 @@ Creating the Application
 		- UI
 		- Communication
 	- Advanced Setup
-		- Update
 		- Add
+			- Valid Prefixes: Add, Insert, Create
+		- Update
+			- Valid Prefixes: Update, Change, Modify
 		- Delete
+			- Valid Prefixes: Delete, Remove
 		- MaxReturn
 	- DomainService Factory
 
