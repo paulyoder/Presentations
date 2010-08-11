@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+	<Header>
+			<Shortcut>ria_DomainServiceFactory</Shortcut>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+	</Header>
+	<Snippet>
+			<Code Language="CSharp">
+				<![CDATA[
+public DomainService CreateDomainService(Type domainServiceType, DomainServiceContext context)
+{
+	DomainService service = null;
+	if (domainServiceType == typeof(EmployeeDomainService))
+		service = new EmployeeDomainService(new EmployeeRepositoryInMemory());
+	else
+		service = (DomainService)Activator.CreateInstance(domainServiceType, true);
+
+	service.Initialize(context);
+	return service;
+}
+
+public void ReleaseDomainService(DomainService domainService)
+{
+	domainService.Dispose();
+}
+				]]>
+			</Code>
+	</Snippet>
+  </CodeSnippet>
+</CodeSnippets>
