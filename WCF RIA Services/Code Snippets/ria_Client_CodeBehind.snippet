@@ -30,6 +30,7 @@ private void UpdateEmployeeButton_Click(object sender, System.Windows.RoutedEven
 private void DeleteEmployeeButton_Click(object sender, System.Windows.RoutedEventArgs e)
 {
 	_context.Employees.Remove(_context.Employees.Last());
+	_context.SubmitChanges();
 }
 				]]>
 			</Code>
