@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+	<Header>
+			<Shortcut>ria_Client_CodeBehind</Shortcut>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+	</Header>
+	<Snippet>
+			<Code Language="CSharp">
+				<![CDATA[
+private void AddEmployeeButton_Click(object sender, System.Windows.RoutedEventArgs e)
+{
+	_context.Employees.Add(new Employee()
+	{
+		Id = _context.Employees.Count + 1,
+		FirstName = "Ben",
+		LastName = "Franklin"
+	});
+	_context.SubmitChanges();
+}
+
+private void UpdateEmployeeButton_Click(object sender, System.Windows.RoutedEventArgs e)
+{
+	_context.Employees.Last().FirstName = "Billy";
+	_context.SubmitChanges();
+}
+
+private void DeleteEmployeeButton_Click(object sender, System.Windows.RoutedEventArgs e)
+{
+	_context.Employees.Remove(_context.Employees.Last());
+}
+				]]>
+			</Code>
+	</Snippet>
+  </CodeSnippet>
+</CodeSnippets>
