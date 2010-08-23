@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+	<Header>
+			<Shortcut>ria_EmployeeDomainServiceDI</Shortcut>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+	</Header>
+	<Snippet>
+			<Code Language="CSharp">
+				<![CDATA[
+IEmployeeRepository _employeeRepository;
+
+        public EmployeeDomainService(IEmployeeRepository employeeRepository)
+        {
+            _employeeRepository = employeeRepository;	
+        }
+
+        public IEnumerable<Employee> GetAllEmployees()
+        {
+            return _employeeRepository.GetAllEmployees();
+        }
+
+        public void AppendEmployee(Employee employee)
+        {
+            _employeeRepository.AddEmployee(employee);
+        }
+
+        public void ModifyEmployee(Employee employee)
+        {
+            _employeeRepository.UpdateEmployee(employee);
+        }
+        
+        public void RemoveEmployee(Employee employee)
+        {
+            _employeeRepository.DeleteEmployee(employee);
+        }
+				
+    }
+}
+				]]>
+			</Code>
+	</Snippet>
+  </CodeSnippet>
+</CodeSnippets>

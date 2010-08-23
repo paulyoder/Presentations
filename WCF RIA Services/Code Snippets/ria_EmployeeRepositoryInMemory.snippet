@@ -41,8 +41,7 @@ public void UpdateEmployee(Employee employee)
 
 public void DeleteEmployee(Employee employee)
 {
-	var employeeIndex = _employees.FindIndex(x => x.Id == employee.Id);
-	_employees.RemoveAt(employeeIndex);
+	_employees.RemoveAll(x => x.Id == employee.Id);
 }
 				]]>
 			</Code>
