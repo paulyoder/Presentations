@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RIAExample3", "RIAExample3\RIAExample3.csproj", "{EFCD6943-0AC5-4CF8-BED4-78220F18A77D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{214B3E30-9819-417D-8EBC-E1B4C13B61FB} = {214B3E30-9819-417D-8EBC-E1B4C13B61FB}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RIAExample3.Web", "RIAExample3.Web\RIAExample3.Web.csproj", "{214B3E30-9819-417D-8EBC-E1B4C13B61FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFCD6943-0AC5-4CF8-BED4-78220F18A77D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFCD6943-0AC5-4CF8-BED4-78220F18A77D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFCD6943-0AC5-4CF8-BED4-78220F18A77D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFCD6943-0AC5-4CF8-BED4-78220F18A77D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{214B3E30-9819-417D-8EBC-E1B4C13B61FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{214B3E30-9819-417D-8EBC-E1B4C13B61FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{214B3E30-9819-417D-8EBC-E1B4C13B61FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{214B3E30-9819-417D-8EBC-E1B4C13B61FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
