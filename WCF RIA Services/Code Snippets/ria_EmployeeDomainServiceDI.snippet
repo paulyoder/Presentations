@@ -22,7 +22,7 @@ IEmployeeRepository _employeeRepository;
             return _employeeRepository.GetAllEmployees();
         }
 
-        public void AppendEmployee(Employee employee)
+        public void AddEmployee(Employee employee)
         {
             _employeeRepository.AddEmployee(employee);
         }
